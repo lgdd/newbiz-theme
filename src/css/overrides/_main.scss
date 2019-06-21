@@ -1,0 +1,26 @@
+@import "barebone";
+@import "portlet-topper";
+
+// moved into a theme available on login?
+.affix, .control-menu {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 989;
+}
+
+.has-control-menu {
+  .affix, #wrapper {
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .has-control-menu {
+    .affix,
+    #wrapper {
+      margin-top: 56px;
+    }
+  }
+}

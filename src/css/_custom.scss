@@ -1,0 +1,84 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+/* inject:imports */
+/* endinject */
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+@import "partials/main";
+@import "overrides/main";
+
+#header {
+  padding: .5em 0;
+  background: $white;
+}
+
+#content {
+  margin-top: 1em;
+  padding: 0;
+}
+
+.has-control-menu {
+  .user-personal-bar {
+    margin-top: 10px;
+  }
+
+  #content {
+    margin-top: 20px;
+  }
+
+  #loginfo-wrapper {
+    padding-top: 0;
+  }
+}
+
+.panel-notifications-count {
+  position: absolute;
+  top: .1rem;
+  left: .5rem;
+}
+
+.scroll-shadow {
+  box-shadow: 0 0 30px rgba(127, 137, 161, 0.3);
+}
+
+a.sign-in {
+  outline: 1px solid black;
+  padding: 0 1em;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 1px solid $primary;
+    background: $primary;
+    color: white;
+    transition: background 0.3s ease;
+  }
+}
+
+#lang-selector-wrapper {
+  padding-top: 10px;
+}
+
+#loginfo-wrapper {
+  padding-top: .5em;
+
+  .user-personal-bar {
+    .user-avatar-link {
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .sign-in {
+    padding-top: 0.5em;
+  }
+}
+
+#nav-menu-wrapper {
+  padding-top: 14px;
+}
+
+.unify-2-rows {
+  padding-top: 6em;
+}

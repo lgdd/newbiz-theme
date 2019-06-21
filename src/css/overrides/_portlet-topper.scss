@@ -1,0 +1,19 @@
+#wrapper {
+  .portlet-topper {
+    a {
+      color:#ddd;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $white;
+      }
+    }
+  }
+  .fragment-entry-link-wrapper {
+    .portlet > .portlet-topper {
+      width: 45px;
+      height: 30px;
+      min-height: 30px;
+    }
+  }
+}
