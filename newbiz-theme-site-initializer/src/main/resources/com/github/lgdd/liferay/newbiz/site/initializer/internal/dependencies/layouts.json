@@ -1,0 +1,11 @@
+[
+  {
+    "layoutType": "content",
+    "name": "Home",
+    "fragments": [
+      "intro",
+      "about"
+    ],
+    "portlets": []
+  }
+]
