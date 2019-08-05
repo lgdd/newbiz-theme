@@ -2,3 +2,5 @@
 *.iml
 *.DS_Store
 scripts
+.gradle
+build
