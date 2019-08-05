@@ -5,6 +5,10 @@
 @import "partials/main";
 @import "overrides/main";
 
+// force font awesome imports
+@import 'liferay-font-awesome/scss/font-awesome';
+@import 'liferay-font-awesome/scss/glyphicons';
+
 #header {
   padding: .5em 0;
   background: $white;
