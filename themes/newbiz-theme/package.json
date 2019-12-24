@@ -1,0 +1,65 @@
+{
+	"devDependencies": {
+		"gulp": "3.9.1",
+		"liferay-theme-tasks": "^9.4.0",
+		"compass-mixins": "0.12.10",
+		"liferay-frontend-common-css": "1.0.4",
+		"liferay-frontend-theme-styled": "4.0.7",
+		"liferay-frontend-theme-unstyled": "4.0.4",
+		"liferay-font-awesome": "3.4.0"
+	},
+	"keywords": [
+		"liferay-theme",
+		"newbiz-theme",
+		"newbiz"
+	],
+	"liferayTheme": {
+		"baseTheme": "styled",
+		"fontAwesome": true,
+		"screenshot": "",
+		"templateLanguage": "ftl",
+		"version": "7.2",
+		"themeletDependencies": {
+			"liferay-dropzone-themelet": {
+				"liferayTheme": {
+					"screenshot": "",
+					"themelet": true,
+					"version": "*"
+				},
+				"name": "liferay-dropzone-themelet",
+				"version": "1.0.3"
+			},
+			"sign-in-modal-themelet": {
+				"liferayTheme": {
+					"screenshot": "",
+					"themelet": true,
+					"version": "*"
+				},
+				"name": "sign-in-modal-themelet",
+				"version": "1.0.2"
+			},
+			"widget-ctrl-lite-themelet": {
+				"liferayTheme": {
+					"screenshot": "",
+					"themelet": true,
+					"version": "*"
+				},
+				"name": "widget-ctrl-lite-themelet",
+				"version": "1.0.0"
+			}
+		}
+	},
+	"main": "package.json",
+	"name": "newbiz-theme",
+	"version": "1.0.1",
+	"scripts": {
+		"init": "gulp init",
+		"build": "gulp build",
+		"deploy": "gulp deploy"
+	},
+	"dependencies": {
+		"liferay-dropzone-themelet": "^1.0.3",
+		"sign-in-modal-themelet": "^1.0.2",
+		"widget-ctrl-lite-themelet": "^1.0.0"
+	}
+}
