@@ -1,6 +1,4 @@
 dependencies {
-	compileOnly group: "biz.aQute.bnd", name: "biz.aQute.bndlib"
-
 	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
 	compileOnly group: "com.liferay", name: "com.liferay.petra.lang"
 	compileOnly group: "com.liferay", name: "com.liferay.dynamic.data.mapping.api"
@@ -10,12 +8,23 @@ dependencies {
 	compileOnly group: "com.liferay", name: "com.liferay.petra.string"
 	compileOnly group: "com.liferay", name: "com.liferay.layout.api"
 	compileOnly group: "com.liferay", name: "com.liferay.site.api"
+	compileOnly group: "com.liferay", name: "com.liferay.layout.page.template.api"
 
 	compileOnly group: "javax.portlet", name: "portlet-api"
 	compileOnly group: "javax.servlet", name: "javax.servlet-api"
 
 	compileOnly group: "org.osgi", name: "org.osgi.core"
 	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+}
 
-	compileOnly project(":modules:newbiz-theme-api")
+// See https://github.com/liferay/liferay-portal/blob/master/modules/sdk/gradle-plugins-defaults/src/main/java/com/liferay/gradle/plugins/defaults/LiferayOSGiDefaultsPlugin.java#L1630
+task zipFragments(type: Zip) {
+	from 'src/main/resources/com/github/lgdd/liferay/newbiz/site/initializer/internal/dependencies/fragments'
+	include '*/**'
+	archiveName 'fragments.zip'
+	destinationDir(project.file('build/resources/main'))
+}
+
+processResources.doLast {
+	tasks.zipFragments.execute()
 }
