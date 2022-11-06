@@ -1,7 +1,7 @@
 {
 	"devDependencies": {
-		"gulp": "3.9.1",
-		"liferay-theme-tasks": "^9.4.0",
+		"gulp": "4.0.2",
+		"liferay-theme-tasks": "^11.4.0",
 		"compass-mixins": "0.12.10",
 		"liferay-frontend-common-css": "1.0.4",
 		"liferay-frontend-theme-styled": "4.0.7",
